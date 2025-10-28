@@ -1,0 +1,91 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  margin: 0;
+  padding: 0;
+  color: #222;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #0077b6;
+}
+
+.input-box {
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  width: 200px;
+  border: 2px solid #0077b6;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #005f8c;
+}
+
+#weatherContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 1.5rem;
+}
+
+.icons {
+  background: #e3f2fd;
+  border-radius: 15px;
+  padding: 1rem;
+  width: 130px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imgClass {
+  width: 70px;
+  height: 70px;
+}
+
+.minValues {
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.maxValues {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .icons {
+    width: 100px;
+    padding: 0.8rem;
+  }
+
+  input {
+    width: 150px;
+  }
+}
