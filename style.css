@@ -1,88 +1,91 @@
-*{
-    color: rgb(7, 1, 1);
-    background: rgb(7, 200, 243);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  margin: 0;
+  padding: 0;
+  color: #222;
+  text-align: center;
 }
 
-#cityInput, #cityName, #inputContainer,button{
-    margin: 3px;
-padding:5px;
-text-align:center;
-font-size:20px;
-font-weight:bold;
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
 }
 
-#weatherContainer{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    height: 300px;
-    width: 1300px;
-    border: 5px solid rgba(97, 95, 95, 0.829);    
-    border-radius: 10px;
+h1 {
+  margin-bottom: 1rem;
+  color: #0077b6;
 }
 
-#iconsContainer{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    height: 240px;
-    width: 1200px;    
-    border: 5px solid rgb(31, 82, 82);    
-    border-radius: 10px;
+.input-box {
+  margin-bottom: 1rem;
 }
 
-.icons{
-    display: inline-bock;
-    float: left;
-    height: 200px;
-    width: 190px;
-    margin: 20px;
-    border: 5px solid rgb(48, 47, 47);
-    border-radius: 10px;
+input {
+  padding: 0.5rem;
+  width: 200px;
+  border: 2px solid #0077b6;
+  border-radius: 8px;
+  outline: none;
 }
 
-.image{
-    height: 140px;
-    width: 100%;
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.imgClass{
-    height: 140px;
-    width: 100%;
+button:hover {
+  background-color: #005f8c;
 }
 
-.weather{
-    margin: 5px;
-   /*  background-color: rgb(106, 215, 255); */
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
+#weatherContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 1.5rem;
 }
 
-.minValues{
-    text-align: center;
-    display: inline-block;
-    border-radius: 5px;
-    height: 25px;
-    width: 85px;
-    margin: 0;
-    margin-bottom: 5px;
-    margin-left: 5px;
+.icons {
+  background: #e3f2fd;
+  border-radius: 15px;
+  padding: 1rem;
+  width: 130px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
+.imgClass {
+  width: 70px;
+  height: 70px;
+}
 
-.maxValues{
-    text-align: center;
-    display: inline-block;
-    border-radius: 5px;
-    height: 25px;
-    width: 85px;
-    margin: 0;
-    margin-bottom: 5px;
-    margin-left: 5px;
+.minValues {
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.maxValues {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .icons {
+    width: 100px;
+    padding: 0.8rem;
+  }
+
+  input {
+    width: 150px;
+  }
 }
